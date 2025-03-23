@@ -1,0 +1,7 @@
+set font "cherry 10"
+
+set statusbar-bg "#0c0c0c" 
+set statusbar-fg "#ABAC96"
+
+set inputbar-fg "#ABAC96"
+set inputbar-bg "#0c0c0c"

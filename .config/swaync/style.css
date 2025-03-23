@@ -1,0 +1,91 @@
+* {
+    font-family: "SF Pro", "JetBrainsMono Nerd Font Prop", sans-serif;
+    font-size: 14px;
+    color: #ebdbb2;
+}
+
+.notification-row {
+    outline: none;
+    margin: 0;
+    padding: 0;
+}
+
+.notification {
+    border-radius: 5;
+    border: 1px solid #333333;
+    margin: 10px;
+    padding: 10px;
+}
+
+.notification-content {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.notification-default-action {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+.notification-action {
+    border: 1px solid #333333;
+    border-radius: 5;
+    margin: 5px;
+    padding: 5px 10px;
+}
+
+.notification-action:hover {
+    background: #4a0000;
+}
+
+.summary {
+    font-weight: bold;
+    color: #ebdbb2;
+}
+
+.time {
+    color: #666666;
+}
+
+.body {
+    color: #ebdbb2;
+}
+
+.control-center {
+    border: 2px solid #ebdbb2;
+    background: rgba(0, 0, 0, 0.75);
+    border-radius: 0;
+    padding: 10px;
+}
+
+.widget-title {
+    font-weight: bold;
+    color: #ebdbb2;
+    margin-bottom: 10px;
+}
+
+.widget-dnd {
+    margin-bottom: 10px;
+}
+
+.widget-dnd label {
+    color: #ebdbb2;
+}
+
+.widget-notifications {
+    background: transparent;
+}
+
+.notification.critical {
+    border: 1px solid #ff0000;
+}
+
+.notification.low {
+    border: 1px solid #4a90e2;
+}
+
+.notification.normal {
+    border: 1px solid #333333;
+}

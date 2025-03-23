@@ -1,0 +1,39 @@
+* {
+    font-family: "SF Pro", JetBrainsMono Nerd Font;
+    font-size: 13px;
+}
+
+#window {
+    background-color: rgba(0, 0, 0, 0.75);
+    border-radius: 5px;
+    border: 2px solid #ebdbb2;
+    margin: 10px;
+}
+
+#input {
+    color: #ebdbb2;
+    background-color: #222222;
+    border: none;
+    margin: 10px;
+}
+
+#entry {
+    color: #ebdbb2;
+    padding: 5px;
+    margin: 10px;
+}
+
+#entry:selected {
+    background-color: #D92339;
+    border-radius: 5px;
+}
+
+#entry image {
+    margin-right: 12px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+#text {
+    margin: 2px 0;
+}

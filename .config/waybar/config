@@ -1,0 +1,116 @@
+{
+  "layer": "top",
+  "position": "top",
+  "spacing": 5,
+  "height": 35,
+  "margin-right": 10,
+  "margin-left": 10,
+  "margin-top": 10,
+  "modules-left": ["hyprland/workspaces"],
+  "modules-center": ["hyprland/window"],
+  "modules-right": ["network", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
+  
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "on-scroll-up": "hyprctl dispatch workspace e+1",
+    "on-scroll-down": "hyprctl dispatch workspace e-1",
+    "format-icons": {
+		"1": "一",
+		"2": "二",
+		"3": "三",
+		"4": "四",
+		"5": "五",
+		"6": "六",
+		"7": "七",
+		"8": "八",
+		"9": "九",
+		"10": "十",
+       },
+    "all-outputs": false,
+    "persistent-workspaces": {
+             "*": 5,
+       },
+    "sort-by-number": true,
+    "active-only": false,
+  },
+
+  "window": {
+    "format": "{}",
+    "max-length": 60,
+    "separator": false,
+    "interval": 1,
+    "tooltip": false,
+  },
+
+  "network": {
+    "format-wifi": "{icon} {signalStrength}%",
+    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format-ethernet": " ",
+    "format-disconnected": "󰤯 n/a",
+    "format-disabled": "󰤭",
+    "tooltip-format": "{ifname}: {ipaddr}",
+    "interval": 5
+  },
+
+  "pulseaudio": {
+    "format": "{icon} {volume}%",
+    "format-muted": " {volume}%",
+    "format-icons": {
+    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "",
+    "default": ["", "", ""],
+    "scroll-step": 5,
+    "on-click-right": "pavucontrol"}
+  },
+
+  "backlight": {
+    "device": "intel_backlight",
+    "format": "{icon} {percent}%",
+    "format-icons": ["", "", "", "", "", "", "", "", ""],
+    "on-scroll-up": "brightnessctl set 5%+",
+    "on-scroll-down": "brightnessctl set 5%-"
+  },
+
+  "battery": {
+    "states": {
+      "warning": 30,
+      "critical": 15
+    },
+    "format": "{icon} {capacity}%",
+    "format-charging": "{icon}󱐋 {capacity}%",
+    "format-plugged": "{icon}󱐋 {capacity}%",
+    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁻", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "interval": 5
+  },
+
+  "custom/notification": {
+    "tooltip": false,
+    "format": "{icon}",
+    "format-icons": {
+      "notification": "󱅫",
+      "none": "󰂚",
+      "dnd-notification": "󰂛",
+      "dnd-none": "󰂛",
+      "inhibited-notification": "󰂚",
+      "inhibited-none": "󰂚",
+      "dnd-inhibited-notification": "󰂛",
+      "dnd-inhibited-none": "󰂛",
+    },
+    "return-type": "json",
+    "exec-if": "which swaync-client",
+    "exec": "swaync-client -swb",
+    "on-click": "swaync-client -t -sw",
+    "on-click-right": "swaync-client -d -sw",
+    "escape": true
+  },
+
+  "clock": {
+    "format": "{:%H:%M}",
+    "tooltip-format": "{:%A, %B %d %Y}",
+    "interval": 10
+  },
+
+  "tray": {
+    "spacing": 8,
+    "icon-size": 18
+  },
+}
