@@ -1,18 +1,18 @@
 * {
-    font-family: "SF Pro", JetBrainsMono Nerd Font;
+    font-family: "Segoe UI", JetBrainsMono Nerd Font;
     font-size: 13px;
 }
 
 #window {
     background-color: rgba(0, 0, 0, 0.75);
-    border-radius: 5px;
+    border-radius: 0px;
     border: 2px solid #ebdbb2;
     margin: 10px;
 }
 
 #input {
     color: #ebdbb2;
-    background-color: #222222;
+    background-color: rgba(f, f, f, 0.95);
     border: none;
     margin: 10px;
 }
@@ -29,7 +29,7 @@
 }
 
 #entry image {
-    margin-right: 12px;
+    margin-right: 10px;
     min-width: 24px;
     min-height: 24px;
 }

@@ -36,7 +36,7 @@
 
   "window": {
     "format": "{}",
-    "max-length": 60,
+    "max-length": 30,
     "separator": false,
     "interval": 1,
     "tooltip": false,
@@ -84,7 +84,7 @@
 
   "custom/notification": {
     "tooltip": false,
-    "format": "{icon}",
+    "format": "{icon} {}",
     "format-icons": {
       "notification": "󱅫",
       "none": "󰂚",
