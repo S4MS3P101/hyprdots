@@ -2,13 +2,12 @@
   "layer": "top",
   "position": "top",
   "spacing": 5,
-  "height": 35,
+  "min-height": 0,
   "margin-right": 10,
   "margin-left": 10,
   "margin-top": 10,
-  "modules-left": ["hyprland/workspaces"],
-  "modules-center": ["hyprland/window"],
-  "modules-right": ["network", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
+  "modules-left": ["hyprland/workspaces", "hyprland/window"],
+  "modules-right": ["network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
   
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -45,10 +44,21 @@
   "network": {
     "format-wifi": "{icon} {signalStrength}%",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
-    "format-ethernet": " ",
+    "format-ethernet": "󰛳",
     "format-disconnected": "󰤯 n/a",
     "format-disabled": "󰤭",
-    "tooltip-format": "{ifname}: {ipaddr}",
+    "tooltip-format": "{essid}: {ipaddr}",
+    "interval": 5
+  },
+
+  "bluetooth": {
+    "format": "{icon}",
+    "format-icons": {
+	 "enabled": "󰂯",
+	 "off": "󰂲",
+	 "connected": "󰂱"
+    },
+    "tooltip-format": "{}",
     "interval": 5
   },
 
@@ -58,8 +68,9 @@
     "format-icons": {
     "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "",
     "default": ["", "", ""],
+    },
     "scroll-step": 5,
-    "on-click-right": "pavucontrol"}
+    "on-click-right": "pavucontrol"
   },
 
   "backlight": {
@@ -110,7 +121,6 @@
   },
 
   "tray": {
-    "spacing": 8,
-    "icon-size": 18
+    "icon-size": 15
   },
 }
