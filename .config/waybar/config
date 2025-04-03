@@ -35,18 +35,17 @@
 
   "window": {
     "format": "{}",
-    "max-length": 30,
+    "max-length": 45,
     "separator": false,
-    "interval": 1,
     "tooltip": false,
   },
 
   "network": {
     "format-wifi": "{icon} {signalStrength}%",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
-    "format-ethernet": "󰛳",
     "format-disconnected": "󰤯 n/a",
     "format-disabled": "󰤭",
+    "format-ethernet": "󰛳",
     "tooltip-format": "{essid}: {ipaddr}",
     "interval": 5
   },
@@ -55,8 +54,9 @@
     "format": "{icon}",
     "format-icons": {
 	 "enabled": "󰂯",
+	 "disabled": "",
+	 "connected": "󰂱",
 	 "off": "󰂲",
-	 "connected": "󰂱"
     },
     "tooltip-format": "{}",
     "interval": 5
@@ -64,10 +64,11 @@
 
   "pulseaudio": {
     "format": "{icon} {volume}%",
-    "format-muted": " {volume}%",
     "format-icons": {
-    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "",
+    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "󰋋",
+    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo-muted": "󰟎",
     "default": ["", "", ""],
+    "default-muted": "",
     },
     "scroll-step": 5,
     "on-click-right": "pavucontrol"
