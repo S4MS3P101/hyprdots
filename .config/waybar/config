@@ -35,7 +35,7 @@
 
   "window": {
     "format": "{}",
-    "max-length": 45,
+    "max-length": 50,
     "separator": false,
     "tooltip": false,
   },

@@ -1,6 +1,6 @@
 [options]
 overlay = false
-overlay_font = cherry:10
+overlay_font = SF Pro:10
 overlay_text_color = #ebdbb2
 overlay_background = #000000
 overlay_background_alpha = BF

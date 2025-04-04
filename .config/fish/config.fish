@@ -26,7 +26,10 @@ alias fetch='fastfetch'
 # Starship prompt
 starship init fish | source
 
-#  Autostart X at login
+#  Autostart Hyprland at login
  if test -z "$DISPLAY"; and test "$XDG_VTNR" = 1
    exec hyprland
  end
+
+ # Paths
+ fish_add_path ~/.local/bin/venv/bin
