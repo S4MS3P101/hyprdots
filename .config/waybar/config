@@ -33,11 +33,13 @@
     "active-only": false,
   },
 
-  "window": {
-    "format": "{}",
-    "max-length": 50,
+  "hyprland/window": {
+    "icon": true,
+    "icon-size": 15,
+    "max-length": 60,
     "separator": false,
     "tooltip": false,
+    "format": "{}"
   },
 
   "network": {
@@ -46,7 +48,8 @@
     "format-disconnected": "󰤯 n/a",
     "format-disabled": "󰤭",
     "format-ethernet": "󰛳",
-    "tooltip-format": "{essid}: {ipaddr}",
+    "tooltip-format-wifi": "{essid}: {ipaddr}",
+    "tooltip-format-ethernet": "{ifname}: {ipaddr}",
     "interval": 5
   },
 
@@ -124,4 +127,5 @@
   "tray": {
     "icon-size": 15
   },
+
 }

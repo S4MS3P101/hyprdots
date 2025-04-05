@@ -50,6 +50,7 @@ window#waybar.empty #window {
 #backlight,
 #battery,
 #custom-notification,
+#custom-arch,
 #clock,
 #tray {
     background: rgba(0, 0, 0, 0.5);
