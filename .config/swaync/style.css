@@ -6,9 +6,9 @@
 }
 
 .control-center {
-    border: none;
+    border: 2px solid rgba(89, 89, 89, 0.50);
     background: rgba(0, 0, 0, 0.5);
-    border-radius: 12;
+    border-radius: 5;
     padding: 10px;
 }
 .blank-window {
@@ -34,14 +34,26 @@
 }
 
 .notification.critical {
-    border: 1px solid #ff0000;
+    border: 2px solid #ff0000;
+    background: rgba(0, 0, 0, 0.50);
 }
 
 .notification.low {
-    border: 1px solid #4a90e2;
+    border: 2px solid rgba(89, 89, 89, 0.50);
+    background: rgba(0, 0, 0, 0.50);
 }
 
 .notification.normal {
-    border: none;
+    border: 2px solid rgba(89, 89, 89, 0.50);
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.notifications {
+    border: 2px solid rgba(89, 89, 89, 0.50);
+    background: rgba(0, 0, 0, 0.50);
+}
+
+.floating.notifications {
+    border: 2px solid rgba(89, 89, 89, 0.50);
     background: rgba(0, 0, 0, 0.50);
 }
