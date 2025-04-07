@@ -6,6 +6,7 @@
   "margin-right": 10,
   "margin-left": 10,
   "margin-top": 10,
+  "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": ["network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
   
@@ -35,7 +36,7 @@
 
   "hyprland/window": {
     "icon": true,
-    "icon-size": 15,
+    "icon-size": 16,
     "max-length": 60,
     "separator": false,
     "tooltip": false,
