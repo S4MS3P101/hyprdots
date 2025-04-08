@@ -6,7 +6,7 @@
 
 #window {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 12px;
+    border-radius: 5px;
     border: none;
     margin: 10px;
 }
@@ -16,6 +16,10 @@
     background-color: rgba(f, f, f, 0.95);
     border: none;
     margin: 10px;
+}
+
+#input:focus {
+    box-shadow: none;
 }
 
 #entry {
@@ -28,6 +32,7 @@
     background-color: #32D292;
     color: #000000;
     border-radius: 5px;
+    outline: none;
 }
 
 #entry image {

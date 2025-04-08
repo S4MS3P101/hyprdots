@@ -5,3 +5,7 @@ overlay_text_color = #ebdbb2
 overlay_background = #000000
 overlay_background_alpha = BF
 overlay_position_bottom = true
+
+[binds]
+r = exec rm "$imv_current_file"; close
+
