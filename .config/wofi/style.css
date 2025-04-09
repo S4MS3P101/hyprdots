@@ -6,8 +6,8 @@
 
 #window {
     background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 5px;
     border: none;
+    border-radius: 5px;
     margin: 10px;
 }
 
@@ -24,21 +24,27 @@
 
 #entry {
     color: #ebdbb2;
-    padding: 5px;
     margin: 10px;
 }
 
 #entry:selected {
-    background-color: #32D292;
     color: #000000;
+    background-color: rgba(50, 210, 146, 0.95);
+    background-color: rgba(f, f, f, 0.95);
     border-radius: 5px;
     outline: none;
 }
 
 #entry image {
-    margin-right: 10px;
+    margin : 5px;
     min-width: 24px;
     min-height: 24px;
+}
+
+expander > list {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
 }
 
 #text {
