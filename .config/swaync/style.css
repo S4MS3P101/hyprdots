@@ -29,6 +29,10 @@
     color: #ebdbb2;
 }
 
+.widget-dnd > switch:checked {
+    background: #32D292;
+}
+
 .widget-notifications {
     background: transparent;
 }
