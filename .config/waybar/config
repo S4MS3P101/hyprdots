@@ -8,7 +8,7 @@
   "margin-top": 10,
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "hyprland/window"],
-  "modules-right": ["network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
+  "modules-right": ["idle_inhibitor", "network", "bluetooth", "pulseaudio", "backlight", "battery", "custom/notification", "clock", "tray"],
   
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -41,6 +41,15 @@
     "separator": false,
     "tooltip": false,
     "format": "{}"
+  },
+
+  "idle_inhibitor": {
+    "format": "{icon}",
+    "format-icons": {
+         "activated": "",
+         "deactivated": ""
+    },
+    "timeout": 30.5
   },
 
   "network": {
