@@ -1,0 +1,9 @@
+set font "cherry 10"
+
+set statusbar-bg "#000000" 
+set statusbar-fg "#ebdbb2"
+
+set inputbar-fg "#ebdbb2"
+set inputbar-bg "#000000"
+
+set selection-clipboard clipboard

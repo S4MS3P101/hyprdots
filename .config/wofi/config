@@ -1,0 +1,8 @@
+show=icons
+mode=drun
+width=30%
+height=40%
+position=center
+insensitive=true
+allow_images=true
+prompt=Search...

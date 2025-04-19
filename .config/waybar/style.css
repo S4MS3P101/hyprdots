@@ -1,0 +1,84 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    border: none;
+    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-weight: 600;
+    font-size: 13px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: none;
+    color: @color14;
+    border-radius: 5px;
+}
+
+window#waybar.empty #window {
+    background: none;
+    border: none;
+}
+
+tooltip {
+    background: alpha(@background, 0.75);
+    color: @color14;
+    padding: 5px;
+    border: 2px solid rgba(89, 89, 89, 0.75);
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+#workspaces button {
+    padding: 5px;
+    background: alpha(@background, 0.75); /* Inactive workspace background */
+    color: @color14;
+    border-bottom: 3px solid @color1;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#workspaces button.active {
+    background-color: @color1; /* Active workspace */
+    color: @color0;
+}
+
+#workspaces button:hover {
+    background: @color14;
+    color: @color0;
+}
+
+#window {
+    background: alpha(@background, 0.75);
+    color: @color14;
+    padding: 5px;
+    border-bottom: 3px solid @color1;
+    border-radius: 5px;
+}
+
+#network,
+#bluetooth,
+#pulseaudio,
+#backlight,
+#battery,
+#custom-notification,
+#custom-arch,
+#clock,
+#tray {
+    background: alpha(@background, 0.75);
+    color: @color14;
+    padding: 5px;
+    border-bottom: 3px solid @color1;
+    border-radius: 5px;
+}
+
+#battery.charging {
+    color: #33ff00;
+}
+
+#battery.warning:not(.charging) {
+    color: orange;
+}
+
+#battery.critical:not(.charging) {
+    color: red;
+}

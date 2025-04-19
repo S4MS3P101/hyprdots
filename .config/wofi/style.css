@@ -1,0 +1,55 @@
+* {
+    font-family: "SF Pro", JetBrainsMono Nerd Font;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+#window {
+    background-color: rgba(0, 0, 0, 0.5);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#input {
+    color: #ebdbb2;
+    background-color: rgba(f, f, f, 0.95);
+    border: none;
+    margin: 10px;
+}
+
+#input:focus {
+    box-shadow: none;
+}
+
+#entry {
+    color: #ebdbb2;
+    background-color: transparent;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+#entry:selected {
+    color: #000000;
+    background-color: #ACC6B9;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+#entry image {
+    margin : 5px;
+    min-width: 24px;
+    min-height: 24px;
+}
+
+expander > list {
+    background-color: black;
+    border: none;
+    border-radius: 5px;
+}
+
+#text {
+    margin: 2px 0;
+}
