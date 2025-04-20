@@ -28,26 +28,43 @@ tooltip {
 }
 
 #workspaces button {
-    padding: 5px;
-    background: alpha(@background, 0.75); /* Inactive workspace background */
-    color: @color14;
-    border-radius: 5px;
+    background-color: @background;
+    color: @foreground;
+    border-bottom: 2px solid @foreground;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    background-color: @color4; /* Active workspace */
-    color: @color0;
+    background-color: alpha(@color14, 0.25);
+    color: @foreground;
+    border-bottom: 2px solid @foreground;
+    margin-right: 5px;
+}
+
+#workspaces button.empty {
+    padding: 5px;
+    background: alpha(@background, 0.75);
+    color: @foreground;
+    border-bottom: none;
+    border-radius: 5px;
+    margin-right: 5px;
+}
+
+#workspaces button.visible {
+    background-color: alpha(@color14, 0.25);
+    color: @foreground;
+    border-bottom: 2px solid @foreground;
+    margin-right: 5px;
 }
 
 #workspaces button:hover {
-    background: @color14;
+    background: @color4;
     color: @color0;
 }
 
 #window {
     background: alpha(@background, 0.75);
-    color: @color14;
+    color: @foreground;
     padding: 5px;
     border-radius: 5px;
 }
@@ -63,7 +80,7 @@ tooltip {
 #clock,
 #tray {
     background: alpha(@background, 0.75);
-    color: @color14;
+    color: @foreground;
     padding: 5px;
     border-radius: 5px;
 }
