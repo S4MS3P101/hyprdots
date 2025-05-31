@@ -75,15 +75,18 @@ tooltip {
 #pulseaudio,
 #backlight,
 #battery,
-#custom-notification,
-#custom-arch,
 #clock,
+#custom-notification,
 #tray {
     color: @color14;
     padding: 5px;
 }
 
-#systray {
+#idle_inhibitor,
+#systray, 
+#custom-notification,
+#clock,
+#tray {
     background: @background;
     border-radius: 5px;
 }
