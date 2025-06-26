@@ -4,11 +4,10 @@
     font-family: "SF Pro", "JetBrainsMono Nerd Font Prop", sans-serif;
     font-size: 14;
     font-weight: 600;
-    color: @color14;
+    color: @foreground;
 }
 
 .control-center {
-    border: 2px solid rgba(89, 89, 89, 0.75);
     background: alpha(@background, 0.75);
     border-radius: 5;
     padding: 10px;
@@ -19,7 +18,7 @@
 
 .widget-title {
     font-weight: bold;
-    color: @color14;
+    color: @foreground;
     margin-bottom: 10px;
 }
 
@@ -29,7 +28,7 @@
 
 .widget-dnd label {
     font-weight: bold;
-    color: @color14;
+    color: @foreground;
 }
 
 .widget-dnd > switch:checked {
@@ -42,25 +41,26 @@
 
 .notification.critical {
     border: 2px solid #ff0000;
+    border-radius: 5;
     background: alpha(@background, 0.75);
 }
 
 .notification.low {
-    border: 2px solid rgba(89, 89, 89, 0.75);
     background: alpha(@background, 0.75);
+    border-radius: 5;
 }
 
 .notification.normal {
-    border: 2px solid rgba(89, 89, 89, 0.75);
     background: alpha(@background, 0.75);
+    border-radius: 5;
 }
 
 .notifications {
-    border: 2px solid rgba(89, 89, 89, 0.75);
     background: alpha(@background, 0.75);
+    border-radius: 5;
 }
 
 .floating.notifications {
-    border: 2px solid rgba(89, 89, 89, 0.75);
     background: alpha(@background, 0.75);
+    border-radius: 5;
 }

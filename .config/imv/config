@@ -1,4 +1,5 @@
 [options]
+title_text = "$(basename "$imv_current_file")"
 overlay = false
 overlay_font = SF Pro:10
 overlay_text_color = #ebdbb2

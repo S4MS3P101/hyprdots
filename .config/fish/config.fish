@@ -2,18 +2,6 @@ if status is-interactive
     set -g fish_greeting
 end
 
-function fish_prompt
-    echo -n (set_color -o red)'['
-    echo -n (set_color -o yellow)"$USER"
-    echo -n (set_color -o green)'@'
-    echo -n (set_color -o blue)(hostname -s)
-    echo -n ' '
-    echo -n (set_color -o magenta)(basename "$PWD")
-    echo -n (set_color -o red)']'
-    echo -n (set_color -o white)'$ '
-    set_color normal
-end
-
 # Aliases
 alias syu='sudo pacman -Syu'
 alias yaysyu='yay -Syu --aur'
