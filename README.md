@@ -68,6 +68,8 @@ Here are the keybindings used in this configuration:
 | `Super + Shift + Return` | Open terminal (`foot`)                 |
 | `Super + Shift + C`      | Kill active window                     |
 | `Super + Shift + Q`      | Exit session                           |
+| `Super + B`              | Toggle waybar                          |
+| `Super + Shift + B`      | Reload waybar                          |
 | `Super + E`              | Open file manager (`nautilus`)         |
 | `Super + W`              | Open browser (`librewolf`)             |
 | `Super + Space`          | Toggle floating window                 |
