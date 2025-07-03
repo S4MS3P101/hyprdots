@@ -1,7 +1,8 @@
 # Hyprland Rice
 This repository contains my personal Hyprland rice (configuration) to get a sleek and functional environment.
 # Screenshots
-
+![Screenshot](1.png)
+![Screenshot](2.png)
 # Dependencies
 Before using this configuration, make sure to install the following dependencies.
 
