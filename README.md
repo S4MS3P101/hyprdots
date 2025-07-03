@@ -76,6 +76,7 @@ Here are the keybindings used in this configuration:
 | `Super + J`              | Toggle split layout                    |
 | `Super + L`              | Lock screen (`hyprlock`)               |
 | `Super + C`              | Open color picker (`hyprpicker`)       |
+| `Super + V`              | Open clipboard                         |
 | `Super + Arrow Keys`     | Move focus between windows             |
 | `Super + [0-9]`          | Switch to workspace \[1-10]            |
 | `Super + Shift + [0-9]`  | Move window to workspace \[1-10]       |
