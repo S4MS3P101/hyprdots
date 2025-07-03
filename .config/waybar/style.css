@@ -20,7 +20,7 @@ window#waybar.empty #window {
 }
 
 tooltip {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     color: @foreground;
     padding: 5px;
     border-radius: 5px;
@@ -55,7 +55,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: @color4;
+    background: alpha(@foreground, 0.25);
     color: @color0;
 }
 

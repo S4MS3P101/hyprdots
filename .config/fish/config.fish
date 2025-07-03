@@ -20,7 +20,7 @@ starship init fish | source
  end
 
  # Paths
- fish_add_path ~/.local/bin/venv/bin
+ fish_add_path ~/.local/bin
 
  # Pywal16
  cat ~/.cache/wal/sequences

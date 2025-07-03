@@ -53,13 +53,14 @@
     "tooltip": false,
     "format": "{}"
   },
-
+  
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
          "activated": "",
          "deactivated": ""
     },
+    "tooltip": false,
     "timeout": 30.5
   },
 
