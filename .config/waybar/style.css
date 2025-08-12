@@ -2,7 +2,7 @@
 
 * {
     border: none;
-    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo";
     font-weight: 600;
     font-size: 13px;
     min-height: 0;
@@ -28,42 +28,49 @@ tooltip {
 }
 
 #workspaces button {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     color: @foreground;
-    border-radius: 5px;
+    min-width: 1.25rem; 
+    border-radius: 999px;
     margin-right: 5px;
 }
 
 #workspaces button.active {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     color: @color14;
     margin-right: 5px;
+    padding: 5px;
+    min-width: 3.25rem; 
+    border-radius: 999px;
 }
 
 #workspaces button.empty {
-    padding: 5px;
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     color: @color8;
-    border-bottom: none;
     margin-right: 5px;
+    padding: 5px;
+    border-radius: 999px;
 }
 
 #workspaces button.visible {
-    background: alpha(@foreground, 1);
+    background: alpha(@color6, 1);
     color: @background;
     margin-right: 5px;
+    padding: 5px;
+    border-radius: 999px;
 }
 
 #workspaces button:hover {
-    background: alpha(@foreground, 0.25);
+    background: alpha(@background, 0.25);
     color: @color0;
-}
-
-#window {
-    background: alpha(@background, 0.75);
-    color: @foreground;
     padding: 5px;
-    border-radius: 5px;
+    border-radius: 999px;
+}
+#window {
+    background: alpha(@background, 0.25);
+    color: @foreground;
+    padding: 5px 8px;
+    border-radius: 999px;
 }
 
 #idle_inhibitor,
@@ -76,7 +83,7 @@ tooltip {
 #custom-notification,
 #tray {
     color: @foreground;
-    padding: 5px;
+    padding: 5px 8px;
 }
 
 #idle_inhibitor,
@@ -84,8 +91,8 @@ tooltip {
 #custom-notification,
 #clock,
 #tray {
-    background: alpha(@background, 0.75);
-    border-radius: 5px;
+    background: alpha(@background, 0.25);
+    border-radius: 999px;
 }
 
 #battery.charging {
