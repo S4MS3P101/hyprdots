@@ -20,7 +20,7 @@ window#waybar.empty #window {
 }
 
 tooltip {
-    background: alpha(@background, 1);
+    background: alpha(@background, 0.25);
     color: @foreground;
     padding: 5px;
     border-radius: 5px;
@@ -61,7 +61,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    background: alpha(@background, 0.25);
+    background: alpha(@color6, 0.25);
     color: @color0;
     padding: 5px;
     border-radius: 999px;
@@ -92,6 +92,17 @@ tooltip {
 #clock,
 #tray {
     background: alpha(@background, 0.25);
+    border-radius: 999px;
+}
+
+#network:hover,
+#bluetooth:hover,
+#pulseaudio:hover,
+#backlight:hover,
+#battery:hover,
+#custom-notification:hover {
+    background: alpha(@color6, 1);
+    color: @color0;
     border-radius: 999px;
 }
 
