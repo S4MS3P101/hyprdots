@@ -1,0 +1,49 @@
+@import "../../.cache/wal/colors-waybar.css";
+
+* {
+    font-family: "SF Pro", "JetBrainsMono Nerd Font Prop", sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    color: @foreground;
+  }  
+
+window#osd {
+    border-radius: 5px;
+    border: none;
+    background: alpha(@background, 0.75);
+
+  #container {
+    margin: 10px;
+  }
+
+  image,
+  label {
+    color: @foreground;
+  }
+
+  progressbar:disabled,
+  image:disabled {
+    opacity: 0.5;
+  }
+
+  progressbar {
+    min-height: 6px;
+    border-radius: 5px;
+    background: transparent;
+    border: none;
+  }
+
+  trough {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: alpha(@background, 0.25);
+  }
+
+  progress {
+    min-height: inherit;
+    border-radius: inherit;
+    border: none;
+    background: alpha(@foreground, 0.25);
+  }
+}
