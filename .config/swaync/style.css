@@ -12,6 +12,7 @@
     border-radius: 5;
     padding: 10px;
 }
+
 .blank-window {
   background: transparent;
 }
@@ -42,25 +43,31 @@
 .notification.critical {
     border: 2px solid #ff0000;
     border-radius: 5;
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
 }
 
 .notification.low {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     border-radius: 5;
 }
 
 .notification.normal {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     border-radius: 5;
 }
 
 .notifications {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     border-radius: 5;
 }
 
 .floating.notifications {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     border-radius: 5;
+}
+
+.notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
+    -gtk-icon-effect: none;
+    background: alpha(@color6, 0.25);
+    border-radius: 5px;
 }

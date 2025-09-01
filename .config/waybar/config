@@ -7,9 +7,9 @@
   "margin-left": 10,
   "margin-top": 10,
   "reload_style_on_change": true,
-  "modules-left": ["hyprland/workspaces"],
+  "modules-left": ["hyprland/workspaces", "custom/magic"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["group/systray", "clock", "custom/notification", "tray"],
+  "modules-right": ["custom/notification", "group/systray", "clock", "tray"],
     
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -35,6 +35,13 @@
     "active-only": false,
   },
 
+  "custom/magic": {
+    "exec": "hyprctl clients | grep -i 'special:magic' | wc -l",
+    "interval": 1,
+    "format": " <span foreground='#c2c6c3'>{}</span>",
+    "tooltip": false
+  },
+
   "hyprland/window": {
     "icon": true,
     "icon-size": 16,
@@ -43,7 +50,7 @@
     "tooltip": false,
     "format": "{}"
   },
-  
+
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {

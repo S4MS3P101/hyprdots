@@ -10,6 +10,7 @@ alias orphans='pacman -Qtdq | sudo pacman -Rns -'
 alias ls='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias fetch='fastfetch'
+alias record='wf-recorder -c h264_vaapi -f Recording_$(date +"%Y%m%d-%H%M%S").mkv'
 
 # Starship prompt
 starship init fish | source
@@ -21,6 +22,7 @@ starship init fish | source
 
  # Paths
  fish_add_path ~/.local/bin
+ # fish_add_path ~/.venv/bin
 
  # Pywal16
  cat ~/.cache/wal/sequences
