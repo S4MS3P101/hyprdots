@@ -8,7 +8,7 @@ Before using this configuration, make sure to install the following dependencies
 
 Official Repository Dependencies
 ```bash
-sudo pacman -S hyprland waybar foot nautilus fuzzel swaync swww cliphist bluez bluez-obex dina-font pavucontrol ttf-jetbrains-mono-nerd fish starship pacman-contrib grim slurp brightnessctl hyprpicker
+sudo pacman -S hyprland waybar foot nautilus fuzzel swaync swww cliphist bluez bluez-obex dina-font pavucontrol ttf-jetbrains-mono-nerd fish starship pacman-contrib grim slurp brightnessctl hyprpicker hyprshot
 ```
 # AUR Dependencies
 The following packages are available only in the AUR, so you'll need an AUR helper like yay (or paru, trizen, etc.) to install them. 
