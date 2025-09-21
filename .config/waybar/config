@@ -73,6 +73,7 @@
        },
 
   "network": {
+    "format": "󰦝",
     "format-wifi": "{icon} {signalStrength}%",
     "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
     "format-disconnected": "󰤯 n/a",
@@ -81,6 +82,7 @@
     "tooltip-format-wifi": "{essid}: {ipaddr}",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}",
     "on-click": "nm-connection-editor",
+    "on-click-right": "foot -e nmtui",
     "interval": 5
   },
 

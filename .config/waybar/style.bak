@@ -27,38 +27,43 @@ tooltip {
     margin-top: 5px;
 }
 
-#workspaces {
-    background: alpha(@background, 0.75);
-    border-radius: 999px;
-    padding: 3px;
-}
-
 #workspaces button {
+    background: alpha(@background, 0.75);
     color: @foreground;
-    min-width: 1.25rem; 
+    min-width: 1.20rem; 
+    border-radius: 999px;
+    margin-right: 5px;
 }
 
 #workspaces button.active {
     background: alpha(@background, 1);
     color: @color14;
+    margin-right: 5px;
+    padding: 5px;
     min-width: 4rem; 
     border-radius: 999px;
 }
 
 #workspaces button.empty {
+    background: alpha(@background, 0.75);
     color: @color8;
+    margin-right: 5px;
+    padding: 5px;
     border-radius: 999px;
-    min-width: 1.25rem; 
 }
 
 #workspaces button.visible {
     background: alpha(@color4, 1);
     color: @background;
-    min-width: 4rem; 
+    margin-right: 5px;
+    padding: 5px;
+    border-radius: 999px;
 }
 
 #workspaces button:hover {
-    color: @color1;
+    background: alpha(@color6, 1);
+    color: @color0;
+    padding: 5px;
     border-radius: 999px;
 }
 #window {
@@ -90,7 +95,7 @@ tooltip {
 #tray {
     background: alpha(@background, 0.75);
     border-radius: 999px;
-    min-width: 1.15rem; 
+    min-width: 0.80rem; 
 }
 
 #network:hover,
@@ -100,7 +105,8 @@ tooltip {
 #battery:hover,
 #clock:hover,
 #custom-notification:hover {
-    color: @color4;
+    background: alpha(@color6, 1);
+    color: @color0;
     border-radius: 999px;
 }
 
