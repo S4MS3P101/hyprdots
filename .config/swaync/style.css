@@ -9,7 +9,7 @@
 
 .control-center {
     background: alpha(@background, 0.75);
-    border-radius: 5;
+    border-radius: 5px;
     padding: 10px;
 }
 
@@ -36,38 +36,34 @@
     background: @color1;
 }
 
-.widget-notifications {
-    background: transparent;
-}
-
-.notification.critical {
-    border: 2px solid #ff0000;
-    border-radius: 5;
-    background: alpha(@background, 1);
-}
-
-.notification.low {
-    background: alpha(@background, 1);
-    border-radius: 5;
-}
-
-.notification.normal {
-    background: alpha(@background, 1);
-    border-radius: 5;
-}
-
-.notifications {
-    background: alpha(@background, 1);
-    border-radius: 5;
-}
-
+.widget-notifications,
+.notifications,
 .floating.notifications {
+    background: transparent;
+    border-radius: 5px;
+}
+
+.notification,
+.notification.low,
+.notification.normal,
+.notification.critical {
     background: alpha(@background, 1);
-    border-radius: 5;
+    border-radius: 5px;
+}
+
+.notification-row,
+.notification-group,
+.notification-background {
+    background: transparent;
+    box-shadow: none;
+}
+
+scrollbar,
+scrollbar slider {
+    all: unset;
 }
 
 .notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
-    -gtk-icon-effect: none;
-    background: alpha(@color6, 0.25);
+    background: alpha(@color2, 1);
     border-radius: 5px;
 }
