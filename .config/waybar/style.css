@@ -2,7 +2,7 @@
 
 * {
     border: none;
-    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo";
+    font-family: "Segoe UI Variable", "JetBrainsMono Nerd Font Propo";
     font-weight: 600;
     font-size: 13px;
     min-height: 0;
@@ -58,7 +58,7 @@ tooltip {
 }
 
 #workspaces button:hover {
-    color: @color1;
+    color: @color7;
     border-radius: 999px;
 }
 #window {
@@ -79,7 +79,7 @@ tooltip {
 #custom-notification,
 #tray {
     color: @foreground;
-    padding: 5px 8px;
+    padding: 5px 7px;
 }
 
 #custom-magic,

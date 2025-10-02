@@ -1,7 +1,7 @@
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
-    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-family: "Segoe UI Variable", "JetBrainsMono Nerd Font Propo", sans-serif;
     font-size: 14px;
     font-weight: 600;
     color: @foreground;
@@ -9,7 +9,8 @@
 
 .control-center {
     background: alpha(@background, 0.75);
-    border-radius: 5px;
+    border-radius: 8px;
+    border: 1px solid #363636;
     padding: 10px;
 }
 
@@ -40,15 +41,15 @@
 .notifications,
 .floating.notifications {
     background: transparent;
-    border-radius: 5px;
+    border-radius: 8px;
 }
 
 .notification,
 .notification.low,
 .notification.normal,
 .notification.critical {
-    background: alpha(@background, 1);
-    border-radius: 5px;
+    background: alpha(@background, 0.75);
+    border-radius: 8px;
 }
 
 .notification-row,
@@ -58,12 +59,23 @@
     box-shadow: none;
 }
 
+.notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
+    background: alpha(@color6, 0.25);
+    border-radius: 8px;
+}
+
+.image {
+    border-radius: 0;
+    margin-right: 5px;
+}
+
+.summary {
+    font-weight: bold;
+}
+
 scrollbar,
 scrollbar slider {
     all: unset;
 }
 
-.notification-row .notification-background .notification .notification-action:hover, .notification-row .notification-background .notification .notification-default-action:hover {
-    background: alpha(@color2, 1);
-    border-radius: 5px;
-}
+
