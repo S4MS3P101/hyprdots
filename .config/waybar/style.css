@@ -10,7 +10,7 @@
 
 window#waybar {
     background: none;
-    color: @color14;
+    color: @foreground;
     border-radius: 5px;
 }
 
@@ -40,7 +40,7 @@ tooltip {
 
 #workspaces button.active {
     background: alpha(@background, 1);
-    color: @color14;
+    color: @color6;
     min-width: 4rem; 
     border-radius: 999px;
 }

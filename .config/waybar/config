@@ -127,7 +127,7 @@
     },
     "format": "{icon} {capacity}%",
     "format-charging": "{icon}󱐋 {capacity}%",
-    "format-plugged": "{icon}󱐋 {capacity}%",
+    "format-full": "󱟢 {capacity}%",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁻", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5
   },
