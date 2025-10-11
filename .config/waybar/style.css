@@ -28,13 +28,15 @@ tooltip {
 }
 
 #workspaces {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     border-radius: 999px;
+    border: 1px solid #363636;
     padding: 3px;
 }
 
 #workspaces button {
     color: @foreground;
+    border-radius: 999px;
     min-width: 1.25rem; 
 }
 
@@ -61,10 +63,12 @@ tooltip {
     color: @color7;
     border-radius: 999px;
 }
+
 #window {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     color: @foreground;
     padding: 5px 8px;
+    border: 1px solid #363636;
     border-radius: 999px;
 }
 
@@ -79,7 +83,7 @@ tooltip {
 #custom-notification,
 #tray {
     color: @foreground;
-    padding: 5px 7px;
+    padding: 5px 8px;
 }
 
 #custom-magic,
@@ -88,8 +92,9 @@ tooltip {
 #custom-notification,
 #clock,
 #tray {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 0.50);
     border-radius: 999px;
+    border: 1px solid #363636;
     min-width: 1.15rem; 
 }
 

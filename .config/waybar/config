@@ -25,14 +25,14 @@
 		"7": "7",
 		"8": "8",
 		"9": "9",
-		"10": "10",
+		"10": "10"
        },
     "all-outputs": false,
     "persistent-workspaces": {
-             "*": 5,
+             "*": 5
        },
     "sort-by-number": true,
-    "active-only": false,
+    "active-only": false
   },
 
   "custom/magic": {
@@ -68,7 +68,7 @@
 			"bluetooth",
 			"pulseaudio",
 			"backlight",
-			"battery",
+			"battery"
 		]
        },
 
@@ -92,7 +92,7 @@
 	 "enabled": "󰂯",
 	 "disabled": "",
 	 "connected": "󰂱",
-	 "off": "󰂲",
+	 "off": "󰂲"
     },
     "tooltip-format": "{}",
     "tooltip-format-connected": "{device_alias}",
@@ -106,7 +106,7 @@
     "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "󰋋",
     "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo-muted": "󰟎",
     "default": ["", "", ""],
-    "default-muted": "",
+    "default-muted": ""
     },
     "scroll-step": 5,
     "on-click-right": "pavucontrol"
@@ -127,7 +127,6 @@
     },
     "format": "{icon} {capacity}%",
     "format-charging": "{icon}󱐋 {capacity}%",
-    "format-full": "󱟢 {capacity}%",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁻", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5
   },
@@ -143,7 +142,7 @@
       "inhibited-notification": "󰂚",
       "inhibited-none": "󰂚",
       "dnd-inhibited-notification": "󰂛",
-      "dnd-inhibited-none": "󰂛",
+      "dnd-inhibited-none": "󰂛"
     },
     "return-type": "json",
     "exec-if": "which swaync-client",
@@ -162,6 +161,6 @@
   "tray": {
     "icon-size": 15,
     "spacing": 5
-  },
+  }
 
 }
