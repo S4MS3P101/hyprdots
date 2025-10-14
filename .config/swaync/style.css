@@ -8,7 +8,7 @@
 }
 
 .control-center {
-    background: alpha(@background, 0.50);
+    background: alpha(@background, 0.80);
     border-radius: 8px;
     border: 1px solid #363636;
     padding: 10px;
@@ -48,7 +48,7 @@
 .notification.low,
 .notification.normal,
 .notification.critical {
-    background: alpha(@background, 0.50);
+    background: alpha(@background, 0.80);
     border-radius: 8px;
 }
 
