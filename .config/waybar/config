@@ -9,7 +9,7 @@
   "reload_style_on_change": true,
   "modules-left": ["hyprland/workspaces", "custom/magic"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["custom/notification", "group/systray", "clock", "tray"],
+  "modules-right": ["custom/notification","custom/nightlight", "group/systray", "clock", "tray"],
     
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -42,6 +42,13 @@
     "tooltip": false
   },
 
+  "custom/nightlight": {
+    "exec": "$HOME/.config/waybar/scripts/nightlight",
+    "interval": 1,
+    "format": {},
+    "tooltip": false
+  },
+
   "hyprland/window": {
     "icon": true,
     "icon-size": 16,
@@ -64,8 +71,8 @@
   "group/systray": {
 		"orientation": "horizontal",
 		"modules": [
-			"network",
 			"bluetooth",
+			"network",
 			"pulseaudio",
 			"backlight",
 			"battery"
@@ -121,12 +128,14 @@
   },
 
   "battery": {
+    "full-at": 100,	  
     "states": {
       "warning": 30,
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-charging": "{icon}󱐋 {capacity}%",
+    "format-charging": " {capacity}%",
+    "format-full": "󱟢 {capacity}%",
     "format-icons": ["󰂎", "󰁺", "󰁻", "󰁻", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
     "interval": 5
   },

@@ -28,7 +28,7 @@ tooltip {
 }
 
 #workspaces {
-    background: alpha(@background, 0.50);
+    background: alpha(@background, 0.80);
     border-radius: 999px;
     border: 1px solid #363636;
     padding: 3px;
@@ -65,7 +65,7 @@ tooltip {
 }
 
 #window {
-    background: alpha(@background, 0.50);
+    background: alpha(@background, 0.80);
     color: @foreground;
     padding: 5px 8px;
     border: 1px solid #363636;
@@ -73,6 +73,7 @@ tooltip {
 }
 
 #custom-magic,
+#custom-nightlight,
 #idle_inhibitor,
 #network,
 #bluetooth,
@@ -87,15 +88,16 @@ tooltip {
 }
 
 #custom-magic,
+#custom-nightlight,
 #idle_inhibitor,
 #systray, 
 #custom-notification,
 #clock,
 #tray {
-    background: alpha(@background, 0.50);
+    background: alpha(@background, 0.80);
     border-radius: 999px;
     border: 1px solid #363636;
-    min-width: 1.15rem; 
+    min-width: 1rem; 
 }
 
 #network:hover,

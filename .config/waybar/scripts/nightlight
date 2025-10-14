@@ -1,0 +1,18 @@
+#!/bin/bash
+
+# Check if hyprsunset is running as a process
+if pgrep -x "hyprsunset" > /dev/null; then
+    hyprsunset_status="active"
+else
+    hyprsunset_status="inactive"
+fi
+
+# Get the current temperature from hyprsunset
+temp_value=$(hyprctl hyprsunset temperature)
+
+# Check if temperature is below 6000 and hyprsunset is active
+if [ "$hyprsunset_status" == "active" ] && [ "$temp_value" -lt 6000 ]; then
+    echo "󱩌 $temp_value K"
+else
+    echo "󰖨"
+fi
