@@ -10,6 +10,7 @@ alias orphans='pacman -Qtdq | sudo pacman -Rns -'
 alias ls='ls -la --color=auto'
 alias grep='grep --color=auto'
 alias fetch='fastfetch'
+alias temp='hyprctl hyprsunset temperature'
 alias record='wf-recorder -c h264_vaapi -f Recording_$(date +"%Y%m%d-%H%M%S").mkv'
 
 # Starship prompt
