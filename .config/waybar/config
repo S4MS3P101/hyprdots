@@ -80,17 +80,17 @@
        },
 
   "network": {
-    "format": "󰦝",
-    "format-wifi": "{icon} {signalStrength}%",
-    "format-icons": ["󰤟", "󰤢", "󰤥", "󰤨"],
+    "format": "{icon}",
+    "format-wifi": "{icon}",
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
     "format-disconnected": "󰤯 n/a",
     "format-disabled": "󰤭",
-    "format-ethernet": "󰛳",
-    "tooltip-format-wifi": "{essid}: {ipaddr}",
+    "format-ethernet": "󰀂",
+    "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}",
     "on-click": "nm-connection-editor",
     "on-click-right": "foot -e nmtui",
-    "interval": 5
+    "interval": 3
   },
 
   "bluetooth": {
@@ -108,35 +108,41 @@
   },
 
   "pulseaudio": {
-    "format": "{icon} {volume}%",
+    "format": "{icon}",
     "format-icons": {
-    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo": "󰋋",
-    "alsa_output.usb-KTMicro_Chu2_DSP_2020-02-20-0000-0000-0000-00.analog-stereo-muted": "󰟎",
+    "alsa_output.usb-Rayking_MH137_00000000000000000000000000000-00.analog-stereo": "󰋋",
+    "alsa_output.usb-Rayking_MH137_00000000000000000000000000000-00.analog-stereo-muted": "󰟎",
     "default": ["", "", ""],
     "default-muted": ""
     },
+    "tooltip-format": "{} ({volume}%) ",
     "scroll-step": 5,
     "on-click-right": "pavucontrol"
   },
 
   "backlight": {
     "device": "intel_backlight",
-    "format": "{icon} {percent}%",
+    "format": "{icon}",
     "format-icons": ["", "", "", "", "", "", "", "", ""],
     "on-scroll-up": "brightnessctl set 5%+",
-    "on-scroll-down": "brightnessctl set 5%-"
+    "on-scroll-down": "brightnessctl set 5%-",
+    "tooltip-format": "Brighntess {}%"
   },
 
   "battery": {
-    "full-at": 100,	  
     "states": {
       "warning": 30,
       "critical": 15
     },
     "format": "{icon} {capacity}%",
-    "format-charging": " {capacity}%",
-    "format-full": "󱟢 {capacity}%",
-    "format-icons": ["󰂎", "󰁺", "󰁻", "󰁻", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+    "format-discharging": "{icon} {capacity}%",
+    "format-charging": "{icon} {capacity}%",
+    "format-plugged": " {capacity}%",
+    "format-icons": { 
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    },
+    "format-full": "󱟢",
     "interval": 5
   },
 
