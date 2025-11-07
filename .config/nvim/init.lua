@@ -22,6 +22,8 @@ Plug 'nvim-tree/nvim-web-devicons'
 Plug 'rose-pine/neovim'
 Plug 'echasnovski/mini.indentscope'
 Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'nvim-lua/plenary.nvim'
+Plug ('nvim-telescope/telescope.nvim', { ['branch'] = '0.1.x' })
 Plug 'scottmckendry/cyberdream.nvim'
 Plug 'rebelot/kanagawa.nvim'
 vim.call('plug#end')
@@ -34,9 +36,7 @@ require('mini.indentscope').setup({
   draw = {
     delay = 50,
   },
-
   symbol = '│',
-
   options = {
     border = 'both', 
     indent_at_cursor = true,
@@ -53,5 +53,14 @@ require("cyberdream").setup({
   transparent = true,
   italic_comments = true,
 })
+require("telescope").setup()
+require("telescope").setup()
 
 vim.cmd('silent! colorscheme cyberdream')
+
+local builtin = require('telescope.builtin')
+vim.keymap.set('n', '<space>ff', builtin.find_files, { desc = "Find files" })
+vim.keymap.set('n', '<space>fg', builtin.live_grep, { desc = "Live grep" })
+vim.keymap.set('n', '<space>fb', builtin.buffers, { desc = "Find buffers" })
+vim.keymap.set('n', '<space>fh', builtin.help_tags, { desc = "Find help" })
+

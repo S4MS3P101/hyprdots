@@ -1,8 +1,8 @@
 @import "../../.cache/wal/colors-waybar.css";
 
 * {
-    font-family: "SF Pro", "JetBrainsMono Nerd Font Propo", sans-serif;
-    font-size: 15px;
+    font-family: "Segoe UI Variable", "JetBrainsMono Nerd Font Propo", sans-serif;
+    font-size: 14px;
     font-weight: 600;
     color: @foreground;
   }  

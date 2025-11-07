@@ -46,7 +46,7 @@
     "exec": "$HOME/.config/waybar/scripts/nightlight",
     "interval": 1,
     "format": {},
-    "tooltip": false
+    "tooltip": true
   },
 
   "hyprland/window": {
@@ -80,6 +80,7 @@
        },
 
   "network": {
+    "interface": "wlp1s0",
     "format": "{icon}",
     "format-wifi": "{icon}",
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
@@ -131,6 +132,7 @@
 
   "battery": {
     "states": {
+      "full": 100,
       "warning": 30,
       "critical": 15
     },
@@ -142,7 +144,7 @@
       "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
       "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
     },
-    "format-full": "󱟢",
+    "format-full": "󱟢 {capacity}%",
     "interval": 5
   },
 

@@ -16,14 +16,13 @@ alias record='wf-recorder -c h264_vaapi -f Recording_$(date +"%Y%m%d-%H%M%S").mk
 # Starship prompt
 starship init fish | source
 
-#  Autostart Hyprland at login
- if test -z "$DISPLAY"; and test "$XDG_VTNR" = 1
-   exec hyprland
- end
+# Autostart Hyprland at login
+if test -z "$DISPLAY"; and test "$XDG_VTNR" = 1
+    exec hyprland
+end
 
- # Paths
- fish_add_path ~/.local/bin
- # fish_add_path ~/.venv/bin
+# Paths
+fish_add_path ~/.local/bin
 
- # Pywal16
- cat ~/.cache/wal/sequences
+# Pywal16
+cat ~/.cache/wal/sequences

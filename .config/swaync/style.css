@@ -10,7 +10,7 @@
 .control-center {
     background: alpha(@background, 0.80);
     border-radius: 8px;
-    border: 1px solid #363636;
+    border: 2px solid @color3;
     padding: 10px;
 }
 

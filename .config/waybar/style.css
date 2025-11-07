@@ -30,7 +30,7 @@ tooltip {
 #workspaces {
     background: alpha(@background, 0.80);
     border-radius: 999px;
-    border: 1px solid #363636;
+    border: 2px solid @color3;
     padding: 3px;
 }
 
@@ -68,7 +68,7 @@ tooltip {
     background: alpha(@background, 0.80);
     color: @foreground;
     padding: 5px 8px;
-    border: 1px solid #363636;
+    border: 2px solid @color3;
     border-radius: 999px;
 }
 
@@ -84,7 +84,7 @@ tooltip {
 #custom-notification,
 #tray {
     color: @foreground;
-    padding: 5px 8px;
+    padding: 0.3rem 0.6rem;
 }
 
 #custom-magic,
@@ -96,7 +96,7 @@ tooltip {
 #tray {
     background: alpha(@background, 0.80);
     border-radius: 999px;
-    border: 1px solid #363636;
+    border: 2px solid @color3;
     min-width: 1rem; 
 }
 
