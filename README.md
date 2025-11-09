@@ -191,3 +191,9 @@ The following rules are applied to certain windows to ensure they open as floati
  layerrule = noanim, swww-daemon
  layerrule = noanim, selection
 ```
+### 🎨 Themes & Icon Pack
+
+For the full visual experience, install the following:
+
+- **Icon Pack**: Fluent‑icon‑theme — GitHub: https://github.com/vinceliuice/Fluent-icon-theme. Use the `grey` variant (or your preferred color) during installation.
+- **GTK Theme**: Colloid‑gtk‑theme — GitHub: https://github.com/vinceliuice/Colloid-gtk-theme. Example install flags: `--tweaks black normal -s compact`.
