@@ -29,7 +29,7 @@ Plug 'rebelot/kanagawa.nvim'
 vim.call('plug#end')
 
 require('lualine').setup({
-  options = { theme = 'auto' }
+  options = { theme = 'ayu' }
 })
 require("nvim-treesitter").setup()
 require('mini.indentscope').setup({
@@ -37,7 +37,6 @@ require('mini.indentscope').setup({
     delay = 50,
   },
   symbol = '│',
-  indent_levels = 4,
   options = {
     border = 'both', 
     indent_at_cursor = true,
@@ -55,11 +54,13 @@ require("cyberdream").setup({
   italic_comments = true,
 })
 require("telescope").setup()
+require("telescope").setup()
 
-vim.cmd('silent! colorscheme rose-pine')
+vim.cmd('silent! colorscheme cyberdream')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<space>ff', builtin.find_files, { desc = "Find files" })
 vim.keymap.set('n', '<space>fg', builtin.live_grep, { desc = "Live grep" })
 vim.keymap.set('n', '<space>fb', builtin.buffers, { desc = "Find buffers" })
 vim.keymap.set('n', '<space>fh', builtin.help_tags, { desc = "Find help" })
+
