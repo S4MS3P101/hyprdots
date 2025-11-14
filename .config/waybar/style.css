@@ -70,8 +70,8 @@ tooltip {
     border: none
 }
 
-#custom-magic,
 #custom-nightlight,
+#custom-launcher,
 #idle_inhibitor,
 #network,
 #bluetooth,
@@ -85,8 +85,8 @@ tooltip {
     padding: 0.3rem 0.6rem;
 }
 
-#custom-magic,
 #custom-nightlight,
+#custom-launcher,
 #idle_inhibitor,
 #systray, 
 #custom-notification,
@@ -118,6 +118,10 @@ tooltip {
     color: red;
 }
 
-#custom-magic {
-    color: @color8;
+#custom-launcher {
+    color: #1793D1;
+}
+
+#custom-launcher:hover {
+    background: alpha(@color4, 0.25);
 }

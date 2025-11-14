@@ -24,8 +24,8 @@ Plug 'echasnovski/mini.indentscope'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug ('nvim-telescope/telescope.nvim', { ['branch'] = '0.1.x' })
-Plug 'scottmckendry/cyberdream.nvim'
 Plug 'rebelot/kanagawa.nvim'
+Plug 'folke/tokyonight.nvim'
 vim.call('plug#end')
 
 require('lualine').setup({
@@ -50,12 +50,17 @@ require("ibl").setup({
   },
   scope = { enabled = false },
 })
-require("cyberdream").setup({
+require('kanagawa').setup({
+    transparent = true,
+    theme = "wave" 
+})
+require('rose-pine').setup({
+styles = { transparency = true },
+})
+require("tokyonight").setup({
   transparent = true,
-  italic_comments = true,
 })
 require("telescope").setup()
-
 vim.cmd('silent! colorscheme rose-pine')
 
 local builtin = require('telescope.builtin')
