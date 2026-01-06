@@ -8,7 +8,7 @@
   }  
 
 window#osd {
-    border-radius: 5px;
+    border-radius: 10px;
     border: none;
     background: alpha(@background, 0.85);
 

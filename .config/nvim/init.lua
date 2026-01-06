@@ -1,6 +1,9 @@
 local vim = vim
 local Plug = vim.fn['plug#']
 
+vim.g.loaded_netrw = 1
+vim.g.loaded_netrwPlugin = 1
+vim.opt.termguicolors = true
 vim.opt.syntax = 'on'
 vim.opt.number = true
 vim.opt.relativenumber = true
@@ -19,17 +22,19 @@ vim.call('plug#begin')
 Plug 'nvim-treesitter/nvim-treesitter'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'nvim-tree/nvim-web-devicons'
-Plug 'rose-pine/neovim'
+Plug 'nvim-tree/nvim-tree.lua'
 Plug 'echasnovski/mini.indentscope'
 Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'nvim-lua/plenary.nvim'
 Plug ('nvim-telescope/telescope.nvim', { ['branch'] = '0.1.x' })
+Plug 'rose-pine/neovim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'folke/tokyonight.nvim'
 vim.call('plug#end')
 
 require('lualine').setup({
-  options = { theme = 'auto' }
+  options = { theme = 'auto' },
+  extensions = { "nvim-tree" },
 })
 require("nvim-treesitter").setup()
 require('mini.indentscope').setup({
@@ -61,6 +66,14 @@ require("tokyonight").setup({
   transparent = true,
 })
 require("telescope").setup()
+require("nvim-tree").setup({
+update_focused_file = {
+  enable = true,
+  update_root = true,
+},
+sync_root_with_cwd = true,
+respect_buf_cwd = true,
+})
 vim.cmd('silent! colorscheme rose-pine')
 
 local builtin = require('telescope.builtin')

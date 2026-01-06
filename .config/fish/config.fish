@@ -18,11 +18,11 @@ starship init fish | source
 
 # Autostart Hyprland at login
 if test -z "$DISPLAY"; and test "$XDG_VTNR" = 1
-    exec hyprland
+    exec start-hyprland
 end
 
 # Paths
 fish_add_path ~/.local/bin
 
 # Pywal16
-cat ~/.cache/wal/sequences
+# cat ~/.cache/wal/sequences

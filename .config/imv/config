@@ -1,12 +1,11 @@
 [options]
 title_text = "$(basename "$imv_current_file")"
 overlay = false
-overlay_font = SF Pro:10
+overlay_font = Segoe UI:10
 overlay_text_color = #ebdbb2
 overlay_background_color = #000000
 overlay_background_alpha = BF
 overlay_position_bottom = true
 
 [binds]
-r = exec rm "$imv_current_file"; close
-
+<Shift+X> = exec rm "$imv_current_file"; close
