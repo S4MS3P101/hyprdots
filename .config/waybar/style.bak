@@ -10,8 +10,8 @@
 
 window#waybar {
     background: none;
-    border: none;
     color: @foreground;
+    border-radius: 5px;
 }
 
 window#waybar.empty #window {
@@ -23,59 +23,51 @@ tooltip {
     background: alpha(@background, 0.75);
     color: @foreground;
     padding: 5px;
+    border-radius: 5px;
     margin-top: 5px;
 }
 
 #workspaces {
     background: alpha(@background, 0.75);
-    border: 1px solid #303741;
-    border-radius: 10px;
-    padding: 0px;
+    border-radius: 999px;
+    padding: 3px;
 }
 
 #workspaces button {
     color: @foreground;
-    border: none;
-    border-radius: 0;
-    margin: 2px;
-    padding: 0px;
+    border-radius: 999px;
+    min-width: 1.25rem; 
 }
 
 #workspaces button.active {
-    background: alpha(@background, 0.75);
+    background: alpha(@background, 1);
     color: @color6;
-    border: none;
-    border-radius: 0;
-    padding: 0px;
+    min-width: 4rem; 
+    border-radius: 999px;
 }
 
 #workspaces button.empty {
-    color: #565656;
-    border: none;
-    border-radius: 0;
-    padding: 0px;
+    color: @color8;
+    border-radius: 999px;
+    min-width: 1.25rem; 
 }
 
 #workspaces button.visible {
     background: alpha(@color4, 1);
-    color: @foreground;
-    border-radius: 999px;
-    padding: 0px;
+    color: @background;
+    min-width: 4rem; 
 }
 
 #workspaces button:hover {
     color: @color7;
-    border: none;
     border-radius: 999px;
-    padding: 0px;
 }
 
 #window {
     background: alpha(@background, 0.75);
     color: @foreground;
-    padding: 1px 8px;
-    border: 1px solid #303741;
-    border-radius: 10px;
+    padding: 5px 8px;
+    border-radius: 999px;
 }
 
 #custom-nightlight,
@@ -86,21 +78,22 @@ tooltip {
 #pulseaudio,
 #backlight,
 #battery,
-#tray,
 #clock,
-#custom-notification {
+#custom-notification,
+#tray {
     color: @foreground;
-    padding: 0.3rem 0.6rem
+    padding: 0.3rem 0.65rem;
 }
 
-#custom-launcher,
 #custom-nightlight,
+#custom-launcher,
 #idle_inhibitor,
 #systray, 
 #custom-notification,
-#clock {
+#clock,
+#tray {
     background: alpha(@background, 0.75);
-    border: 1px solid #303741;
+    border-radius: 999px;
 }
 
 #network:hover,
@@ -111,26 +104,7 @@ tooltip {
 #clock:hover,
 #custom-notification:hover {
     color: @color4;
-}
-
-#clock {
-    border-radius: 10px;
-}
-
-#custom-notification {
-    border-radius: 10px;
-}
-
-#systray {
-    border-radius: 10px;
-}
-
-#tray {
-    background: none;
-}
-
-#battery.full {
-    color: #33ff00;
+    border-radius: 999px;
 }
 
 #battery.charging {
@@ -147,9 +121,8 @@ tooltip {
 
 #custom-launcher {
     color: #1793D1;
-    border-radius: 10px;
 }
 
 #custom-launcher:hover {
-    background: alpha(@color7, 0.10);
+    background: alpha(@color4, 0.15);
 }

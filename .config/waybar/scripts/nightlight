@@ -12,7 +12,7 @@ temp_value=$(hyprctl hyprsunset temperature)
 
 # Check if temperature is below 6000 and hyprsunset is active
 if [ "$hyprsunset_status" == "active" ] && [ "$temp_value" -lt 6000 ]; then
-    echo "󱩌 $temp_value K"
+    echo "󰖨 $temp_value K"
 else
-    echo "󰖨"
+    echo ""
 fi

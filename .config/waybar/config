@@ -9,7 +9,7 @@
   "reload_style_on_change": true,
   "modules-left": ["custom/launcher", "hyprland/workspaces"],
   "modules-center": ["hyprland/window"],
-  "modules-right": ["custom/notification","custom/nightlight", "group/systray", "clock", "tray"],
+  "modules-right": ["custom/notification","custom/nightlight", "group/systray", "clock"],
     
   "hyprland/workspaces": {
     "format": "{icon}",
@@ -52,7 +52,7 @@
 
   "hyprland/window": {
     "icon": true,
-    "icon-size": 16,
+    "icon-size": 15,
     "max-length": 80,
     "separator": true,
     "tooltip": false,
@@ -76,7 +76,8 @@
 			"network",
 			"pulseaudio",
 			"backlight",
-			"battery"
+			"battery",
+			"tray"
 		]
        },
 
@@ -90,8 +91,8 @@
     "format-ethernet": "󰀂",
     "tooltip-format-wifi": "{essid} ({frequency} GHz)\n⇣{bandwidthDownBytes}  ⇡{bandwidthUpBytes}",
     "tooltip-format-ethernet": "{ifname}: {ipaddr}",
-    "on-click": "nm-connection-editor",
-    "on-click-right": "foot -e nmtui",
+    "on-click": "foot -e nmtui",
+    "on-click-right": "nmcli radio wifi | grep -q enabled && nmcli radio wifi off || nmcli radio wifi on",
     "interval": 3
   },
 
@@ -99,13 +100,14 @@
     "format": "{icon}",
     "format-icons": {
 	 "enabled": "󰂯",
-	 "disabled": "",
+	 "disabled": "󰂲",
 	 "connected": "󰂱",
 	 "off": "󰂲"
     },
     "tooltip-format": "{}",
     "tooltip-format-connected": "{device_alias}",
-    "on-click-right": "foot -e bluetuith",
+    "on-click": "foot -e bluetuith",
+    "on-click-right": "bluetoothctl show | grep -q 'Powered: yes' && bluetoothctl power off || bluetoothctl power on",
     "interval": 5
   },
 
@@ -119,7 +121,7 @@
     },
     "tooltip-format": "{} ({volume}%) ",
     "scroll-step": 5,
-    "on-click-right": "pavucontrol"
+    "on-click": "pavucontrol"
   },
 
   "backlight": {
@@ -145,7 +147,7 @@
       "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
       "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
     },
-    "format-full": "󱟢 {capacity}%",
+    "format-full": " {capacity}%",
     "interval": 5
   },
 
