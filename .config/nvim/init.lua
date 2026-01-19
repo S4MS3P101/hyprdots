@@ -30,6 +30,8 @@ Plug ('nvim-telescope/telescope.nvim', { ['branch'] = '0.1.x' })
 Plug 'rose-pine/neovim'
 Plug 'rebelot/kanagawa.nvim'
 Plug 'folke/tokyonight.nvim'
+Plug 'ellisonleao/gruvbox.nvim'
+Plug 'gbprod/nord.nvim'
 vim.call('plug#end')
 
 require('lualine').setup({
@@ -65,6 +67,14 @@ styles = { transparency = true },
 require("tokyonight").setup({
   transparent = true,
 })
+require("gruvbox").setup({
+  terminal_colors = true,	
+  transparent_mode = true,
+})
+require("nord").setup({
+  terminal_colors = true,	
+  transparent = true,
+})
 require("telescope").setup()
 require("nvim-tree").setup({
 update_focused_file = {
@@ -74,7 +84,7 @@ update_focused_file = {
 sync_root_with_cwd = true,
 respect_buf_cwd = true,
 })
-vim.cmd('silent! colorscheme rose-pine')
+vim.cmd('silent! colorscheme tokyonight')
 
 local builtin = require('telescope.builtin')
 vim.keymap.set('n', '<space>ff', builtin.find_files, { desc = "Find files" })

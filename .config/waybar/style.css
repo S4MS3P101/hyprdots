@@ -129,10 +129,6 @@ tooltip {
     background: none;
 }
 
-#battery.full {
-    color: #33ff00;
-}
-
 #battery.charging {
     color: #33ff00;
 }
@@ -143,6 +139,10 @@ tooltip {
 
 #battery.critical:not(.charging) {
     color: red;
+}
+
+#custom-nightlight {
+    border-radius: 10px;
 }
 
 #custom-launcher {

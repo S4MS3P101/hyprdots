@@ -25,4 +25,4 @@ end
 fish_add_path ~/.local/bin
 
 # Pywal16
-# cat ~/.cache/wal/sequences
+cat ~/.cache/wal/sequences

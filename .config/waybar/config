@@ -70,16 +70,16 @@
   },
 
   "group/systray": {
-		"orientation": "horizontal",
-		"modules": [
-			"bluetooth",
-			"network",
-			"pulseaudio",
-			"backlight",
-			"battery",
-			"tray"
-		]
-       },
+	"orientation": "horizontal",
+	"modules": [
+		"bluetooth",
+		"network",
+		"pulseaudio",
+		"backlight",
+		"battery",
+		"tray"
+	]
+  },
 
   "network": {
     "interface": "wlp1s0",
